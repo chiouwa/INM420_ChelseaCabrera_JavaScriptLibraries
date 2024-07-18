@@ -13,7 +13,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@floating-ui/dom": "^1.6.7",
     "aos": "^2.3.4",
-    "lightbox2": "^2.11.4"
+    "choreographer-js": "^1.1.0",
+    "granim": "^2.0.0",
+    "gsap": "^3.12.5",
+    "lightbox2": "^2.11.4",
+    "screenfull": "^6.0.2"
   }
 }

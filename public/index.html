@@ -12,6 +12,7 @@
 
     <!-- CSS EXTERNAL -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/js/main.js"></script>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,12 @@
     <script src="https://kit.fontawesome.com/2216cb6a92.js" crossorigin="anonymous"></script>
 
     <!-- JS LIBRARY -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="assets/js/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.7"></script>
+
+
 </head>
 <body>
     <header>
@@ -34,7 +39,7 @@
             <li><a>MY ACCOUNT</a></li>
             <li>
                 <button id="cb">
-                    <img id="cart" src="assets/images/cart.png">
+                    <div id="boxGreen"></div>
                     <p>MY CART</p>
                 </button>
             </li>
@@ -54,45 +59,79 @@
             <p class="titles">Work from home</p>
             <span class="subtitles1">Shop home office sets and decor</span>
             <div class="products">
-                <figure id="makeup1">
-                    <h1>Frosted Sage Vase </h1>
-                    <figcaption id="makeupnew">$12.99 CAD</figcaption>
-                </figure>
-                 <figure id="makeup2">
-                    <h1>Sova Eco Office Chair</h1>
-                    <figcaption id="makeupnew">$59.99 CAD</figcaption>
-                </figure>
-                <figure id="makeup3">
-                    <h1>Brimstone Minidesk</h1>
-                    <figcaption id="makeupnew">$32.99 CAD</figcaption>
-                </figure>
-                <figure id="makeup4">
-                    <h1>Brimstone Desk Shelf</h1>
-                    <figcaption id="makeupnew">$18.99 CAD</figcaption>
-                </figure>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="100"
+                        id="item1">
+                    <figure>
+                        <h1>Frosted Sage Vase </h1>
+                        <figcaption id="itemNew">$12.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="200"
+                        id="item2">
+                    <figure>
+                        <h1>Sova Eco Office Chair</h1>
+                        <figcaption id="itemNew">$59.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="300"
+                        id="item3">
+                    <figure>
+                        <h1>Brimstone Minidesk</h1>
+                        <figcaption id="itemNew">$32.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="400"
+                        id="item4">
+                    <figure>
+                        <h1>Brimstone Desk Shelf</h1>
+                        <figcaption id="itemNew">$18.99 CAD</figcaption>
+                    </figure>
+                </div>
             </div>
+
+            <!-- SECOND ROW -->
             <div class="products">
-                <figure id="makeup5">
-                    <h1>Pins and clip collections </h1>
-                    <figcaption id="makeupnew">$4.99 CAD</figcaption>
-                </figure>
-                 <figure id="makeup6">
-                    <h1>Frosted Sage Desk Lamp</h1>
-                    <figcaption id="makeupnew">$19.99 CAD</figcaption>
-                </figure>
-                <figure id="makeup7">
-                    <h1>Chamber Dining Set</h1>
-                    <figcaption id="makeupnew">$129.99 CAD</figcaption>
-                </figure>
-                <figure id="makeup8">
-                    <h1>Clove Cozy</h1>
-                    <figcaption id="makeupnew">$39.99 CAD</figcaption>
-                </figure>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="100"
+                        id="item5">
+                    <figure>
+                        <h1>Pins and clip collections </h1>
+                        <figcaption id="itemNew">$4.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="200"
+                        id="item6">
+                    <figure>
+                        <h1>Frosted Sage Desk Lamp</h1>
+                        <figcaption id="itemNew">$19.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="300"
+                        id="item7">
+                    <figure>
+                        <h1>Chamber Dining Set</h1>
+                        <figcaption id="itemNew">$129.99 CAD</figcaption>
+                    </figure>
+                </div>
+                <div    data-aos="fade-up" 
+                        data-aos-offset="400"
+                        id="item8">
+                    <figure>
+                        <h1>Clove Cozy</h1>
+                        <figcaption id="itemNew">$39.99 CAD</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
         <!-- LOCATIONS -->
-        <section class="lo">
+        <section class="lo" id="canvas-basic">
             <p class="titles">LOCATIONS</p>
             <span class="subtitles4">Come visit us at our various locations</span>
             <div>
@@ -127,6 +166,19 @@
             <li id="sm2"></li>
         </ul>
     </footer>
+
+    <!-- JS Scripts -->
+     <!-- Animated on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();        
+    </script>
+
+    <!-- GSAP -->
+    <script src="assets/js/gsap.min.js"></script>
+
+     <!-- GRANDIM -->
+    <script src="assets/js/granim.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
