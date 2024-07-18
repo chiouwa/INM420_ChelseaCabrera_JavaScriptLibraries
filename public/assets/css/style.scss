@@ -1,5 +1,5 @@
 // VARIABLES
-$forestgreen: rgb(50, 96, 44);
+$forestgreen: #32602c;
 $grey: rgb(235, 234, 234);
 $spadeblack: #232323;
 
@@ -113,7 +113,7 @@ body {
 .hr {
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(160, 230, 255);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     background-image: url(../images/living-room-2732939_1920.jpg);
@@ -126,6 +126,33 @@ body {
     }
 }
 
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+#canvas-image {
+    display: flex;
+    width: 100vw;
+    height: 2%;
+    background-color: #232323;
+}
+
 .newitems {
     width: 96vw;
     height: 70vh;
@@ -136,11 +163,6 @@ body {
     flex-direction: column;
     padding: 30px 0 0 3%;
     // overflow-x: hidden;
-}
-
-.titles {
-    width: 100vw;
-    font-size: 40px;
 }
 
 .subtitles1 {
@@ -158,7 +180,7 @@ figure {
     flex-direction: column;
 }
 
-h1 {
+figure h1 {
     width: 100%;
     font-size: 18px;
     margin: 90% 0 0 0;
