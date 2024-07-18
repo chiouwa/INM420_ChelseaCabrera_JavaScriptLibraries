@@ -1,0 +1,482 @@
+/* WELCOME TO MY CODE */
+/* I KNOW THERE'S A LOT AKGHIAEHGR :< */
+
+$forestgreen: rgb(50, 96, 44);
+$grey: rgb(235, 234, 234);
+$spadeblack: #232323;
+/* HEADER AND NAVIGATION */
+header {
+    width: 100vw;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0 1px 5px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: fixed;
+}
+
+#icon {
+    width: 15%;
+    height: 50%;
+    background-image: url(../images/couch-potato-high-resolution-logo-transparent.png);
+    background-size: cover;
+    background-repeat: none;
+}
+
+#burger {
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    background-color: white;
+    background-image: url(../images/hamburger\ menu.png);
+    background-size: cover;
+    display: flex;
+}
+
+#nav {
+    width: 40%;
+    height: 60px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    /* margin-right: 4vw; */
+    display: none;
+    align-items: center;
+    gap: 40px;
+}
+
+/* CART BUTTON */
+#cb {
+    width: 140%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid $forestgreen;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cb:hover {
+    background-color: $forestgreen;
+    /* box-shadow: 0 1px 5px grey; */
+    color: white;
+    transition: 0.4s;
+  }
+
+#cart {
+    width: 29px;
+    height: 24px;
+}
+
+a:hover {
+    color: $forestgreen;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+/* MAIN CONTENTS */
+/* GENERAL CODING FOR ALL OF BODY */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hr {
+    width: 120vw;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(160, 230, 255);
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/living-room-2732939_1920.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+#salepromo {
+    width: 100vw;
+    height: 40vw;
+}
+
+.newitems {
+    width: 100vw;
+    height: 42%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 3%;
+}
+
+.titles {
+    width: 100vw;
+    font-size: 40px;
+}
+
+/* FOR NEW ITEMS - KOREAB NEAUTY SECTION */
+.subtitles1 {
+    font-size: 18px;
+}
+
+.subtitles1:hover {
+    text-decoration: underline;
+    color: $spadeblack;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    width: 100%;
+    font-size: 18px;
+    margin: 90% 0 0 0;
+    color: $spadeblack;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* NEW ITEMS - KOREAN BEAUTY PRODUCTS */
+/* MAKEUP - MAIN IMAGE */
+/* MAKEUP HOVER - IMAGE THAT WILL APPEAR ONCE MOUSE HOVERS */
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 40px;
+}
+
+#makeupnew {
+    width: 100%;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.678); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+
+/* KOREAN BEAUTY PRODUCTS 1-10 */
+/* LIP TINT */
+#makeup1 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/flower-vase-5517745_1280.jpg);
+    background-size: cover;
+    background-position: 0% 35%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* PALETTE */
+#makeup2 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/workplace-5517744_1280.jpg);
+    background-size: cover;
+    background-position: 0% 35%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* BROW PEN */
+#makeup3 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/table-2587598_1280.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* LIQUID GLITTER */
+#makeup4 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/computer-2565478_1280.jpg);
+    background-size: cover;
+    background-position: 0 35%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* FOUNDATION */
+#makeup5 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/desktop-3082621_1280.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* WATER TINT */
+#makeup6 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/desk-lamp-977069_1280.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* LINER */
+#makeup7 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/furniture-1840463_1280.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* CONCEALER */
+#makeup8 {
+    width: 75vw;
+    height: 30vh;
+    background-image: url(../images/hanging-chair-5200722_1280.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    margin: 20px 15px 75px 15px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* LOCATIONS */
+.lo {
+    width: 100vw;
+    /* height: 200px; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2% 0 0 4%;
+    position: relative;
+}
+
+h2 {
+    margin: 0 0 5px 0;
+}
+
+.locations {
+    margin: 30px 0 20px 0;
+}
+
+#city {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+/* THIS GOES AT THE BOTTOM OF THE PAGE */
+/* THIS HAS ALL OF THE CONTACT INFO */
+footer {
+    width: 100vw;
+    height: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+#cwu {
+    width: 150px;
+    height: 20px;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#top {
+    width: 150px;
+    height: 20px;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#top:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT LINKS */
+#contactlinks {
+    width: 250px;
+    height: 20px;
+    font-size: 8pt;
+    padding: 3px 0 0 0;
+    text-align: center;
+}
+
+.fcl {
+    text-decoration: underline;
+}
+
+.fcl:hover {
+    color: $forestgreen;
+}
+
+/* SOCIAL MEDIA ICONS */
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+}
+
+#sm1 {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/instagram.png);
+    background-size: cover;
+    margin: 20% 0;
+}
+
+#sm2 {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/twitter.png);
+    background-size: cover;
+    margin: 20% 0;
+}
+
+
+/* DESKTOP VIEW */
+/* WHAT THE WEBSITE WILL LOOK LIKE WHEN CHANGED TO DESKTOP */
+@media only screen and (min-width:391px) {
+    #header {
+        padding: 0 20px;
+        height: 10vh;
+        position: fixed;
+    }
+    #nav {
+        width: 50%;
+        display: flex;
+    }
+    #burger {
+        display: none;
+    }
+    .newmakeup {
+        width: 20vw;
+        height: 75vh;
+    }
+    .products {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .fb {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #anime {
+        width: 60vw;
+        height: 50vh;
+    }
+    #SHOPANIME {
+        margin-top: 48%;
+        margin-right: 40%;
+    }
+    #kpop {
+        width: 60vw;
+        height: 50vh;
+    }
+    #SHOPKPOP {
+        margin-top: 48%;
+        margin-right: 40%;
+    }
+    #salepromo {
+        max-width: 100vw;
+        margin: 80px 0 0 0;
+    }
+    .hr {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+    .SB {
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+    #SHOPSALE {
+        width: 120%;
+        height: 12%;
+    }
+    #SHOPNEW {
+        width: 120%;
+        height: 12%;
+    }
+}
